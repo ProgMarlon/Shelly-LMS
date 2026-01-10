@@ -32,4 +32,3 @@ This project currently uses **local filesystem storage** for uploads (`public/up
 - **Locally**: Works perfectly.
 - **On Vercel**: Files uploaded will **disappear** when the app redeploys or sleeps, because Vercel functions are serverless and ephemeral.
 - **Solution**: For permanent storage in production, connect this app to **Vercel Blob** or **Supabase Storage**.
-"# Shelly-LMS" 
