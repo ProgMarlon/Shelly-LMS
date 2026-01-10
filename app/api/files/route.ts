@@ -8,7 +8,21 @@ export async function GET() {
     if (!fs.existsSync(directoryPath)) {
         return NextResponse.json({ files: [] });
     }
-    const files = fs.readdirSync(directoryPath);
+    
+    const fileNames = fs.readdirSync(directoryPath);
+    
+    const files = fileNames.map(name => {
+        const stats = fs.statSync(path.join(directoryPath, name));
+        return {
+            name,
+            createdAt: stats.birthtime,
+            size: stats.size
+        };
+    });
+
+    // Sort by newest first
+    files.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
+
     return NextResponse.json({ files });
   } catch (err) {
     return NextResponse.json({ files: [] });
