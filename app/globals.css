@@ -37,72 +37,84 @@
 }
 
 /* 
-  PINK THEME 
-  Hue: 330 (Rose/Pink)
+  GIRLISH PASTEL THEME (High Contrast Update)
 */
 :root {
-  --background: hsl(0 0% 100%);
-  --foreground: hsl(330 10% 3.9%); 
+  /* Soft Pastel Pink Background */
+  --background: #FFF0F5; 
+  --foreground: #4A2E36; /* Darker Chocolate Brown for better readability */
 
-  --card: hsl(0 0% 100%);
-  --card-foreground: hsl(330 10% 3.9%);
+  /* White cards */
+  --card: #FFFFFF; 
+  --card-foreground: #4A2E36;
 
-  --popover: hsl(0 0% 100%);
-  --popover-foreground: hsl(330 10% 3.9%);
+  --popover: #FFFFFF;
+  --popover-foreground: #4A2E36;
 
-  /* PRIMARY: Vibrant Pink */
-  --primary: hsl(330 81% 60%); 
-  --primary-foreground: hsl(0 0% 100%);
+  /* PRIMARY: Deep Rose (Darker than before) */
+  --primary: #C06C84; 
+  --primary-foreground: #FFFFFF;
 
   /* SECONDARY: Soft Pink */
-  --secondary: hsl(330 100% 96%);
-  --secondary-foreground: hsl(330 50% 40%);
+  --secondary: #FFD1DC;
+  --secondary-foreground: #5D3A46;
 
-  --muted: hsl(330 20% 96%);
-  --muted-foreground: hsl(330 10% 45%);
+  --muted: #F8C8DC;
+  --muted-foreground: #7D4E5E; /* Darker muted text */
 
-  --accent: hsl(330 100% 94%);
-  --accent-foreground: hsl(330 50% 40%);
+  --accent: #E6A9C8;
+  --accent-foreground: #FFFFFF;
 
-  --destructive: hsl(0 84.2% 60.2%);
-  --destructive-foreground: hsl(0 0% 98%);
+  --destructive: #B04C68;
+  --destructive-foreground: #FFFFFF;
 
-  --border: hsl(330 20% 90%);
-  --input: hsl(330 20% 90%);
-  --ring: hsl(330 81% 60%);
+  --border: #E8B4C8; /* Darker border for visibility */
+  --input: #E8B4C8;
+  --ring: #C06C84;
 
-  --radius: 0.75rem;
+  --radius: 1.5rem; 
 }
 
 .dark {
-  --background: hsl(330 10% 4%); 
-  --foreground: hsl(0 0% 98%);
+  --background: #2D1A21; 
+  --foreground: #FFD1DC;
 
-  --card: hsl(330 10% 8%);
-  --card-foreground: hsl(0 0% 98%);
+  --card: #3D242D;
+  --card-foreground: #FFD1DC;
 
-  --popover: hsl(330 10% 8%);
-  --popover-foreground: hsl(0 0% 98%);
+  --popover: #3D242D;
+  --popover-foreground: #FFD1DC;
 
-  /* PRIMARY: Hot Pink for Dark Mode */
-  --primary: hsl(330 81% 60%);
-  --primary-foreground: hsl(0 0% 100%);
+  --primary: #E6A9C8;
+  --primary-foreground: #2D1A21;
 
-  --secondary: hsl(330 30% 15%);
-  --secondary-foreground: hsl(0 0% 98%);
+  --secondary: #5D3A46;
+  --secondary-foreground: #FFD1DC;
 
-  --muted: hsl(330 30% 15%);
-  --muted-foreground: hsl(330 10% 65%);
+  --muted: #4A2E38;
+  --muted-foreground: #D48AA8;
 
-  --accent: hsl(330 30% 20%);
-  --accent-foreground: hsl(0 0% 98%);
+  --accent: #C26B88;
+  --accent-foreground: #FFFFFF;
 
-  --destructive: hsl(0 62.8% 30.6%);
-  --destructive-foreground: hsl(0 0% 98%);
+  --destructive: #B04C68;
+  --destructive-foreground: #FFFFFF;
 
-  --border: hsl(330 20% 18%);
-  --input: hsl(330 20% 18%);
-  --ring: hsl(330 81% 60%);
+  --border: #5D3A46;
+  --input: #5D3A46;
+  --ring: #D48AA8;
+}
+
+@layer utilities {
+  .text-pink-outline {
+    color: black;
+    text-shadow: 
+      -1px -1px 0 #FFD1DC,  
+       1px -1px 0 #FFD1DC,
+      -1px  1px 0 #FFD1DC,
+       1px  1px 0 #FFD1DC,
+       0px  2px 4px rgba(255, 182, 193, 0.5);
+  }
 }
 
 @layer base {
@@ -111,5 +123,22 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-image: 
+      radial-gradient(circle at 10% 20%, rgba(255, 209, 220, 0.4) 0%, transparent 20%),
+      radial-gradient(circle at 90% 80%, rgba(230, 169, 200, 0.4) 0%, transparent 20%);
+    background-attachment: fixed;
   }
+}
+
+/* Custom Scrollbar for cuteness */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #E6A9C8;
+  border-radius: 10px;
+  border: 2px solid #FFF0F5;
 }

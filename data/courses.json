@@ -1,0 +1,152 @@
+[
+  {
+    "id": "c1",
+    "code": "TPC 102",
+    "title": "Risk Management as Applied to Safety, Security, and Sanitation",
+    "instructor": "TBA",
+    "schedule": "MW 7:00AM - 8:30AM",
+    "room": "401",
+    "units": 3,
+    "progress": 0,
+    "materials": [],
+    "quizzes": [
+      {
+        "id": "1768110806107",
+        "title": "test quiz",
+        "questions": [
+          {
+            "type": "mcq",
+            "question": "",
+            "options": [
+              "",
+              "",
+              "",
+              ""
+            ],
+            "answer": 0
+          },
+          {
+            "type": "mcq",
+            "question": "as",
+            "options": [
+              "asd",
+              "ssss",
+              "aas",
+              "asdsd"
+            ],
+            "answer": 0
+          }
+        ],
+        "createdAt": "2026-01-11T05:53:26.107Z"
+      },
+      {
+        "id": "1768110806109",
+        "title": "test quiz",
+        "questions": [
+          {
+            "type": "mcq",
+            "question": "",
+            "options": [
+              "",
+              "",
+              "",
+              ""
+            ],
+            "answer": 0
+          },
+          {
+            "type": "mcq",
+            "question": "as",
+            "options": [
+              "asd",
+              "ssss",
+              "aas",
+              "asdsd"
+            ],
+            "answer": 0
+          }
+        ],
+        "createdAt": "2026-01-11T05:53:26.109Z",
+        "lastScore": 100,
+        "takenDate": "2026-01-11T05:53:41.492Z"
+      }
+    ]
+  },
+  {
+    "id": "c2",
+    "code": "GE 101",
+    "title": "Readings in Philippine History",
+    "instructor": "TBA",
+    "schedule": "MW 8:30AM - 10:00AM",
+    "room": "401",
+    "units": 3,
+    "progress": 0,
+    "materials": []
+  },
+  {
+    "id": "c3",
+    "code": "MATH 101",
+    "title": "Mathematics in the Modern World",
+    "instructor": "TBA",
+    "schedule": "MW 10:00AM - 11:30AM",
+    "room": "401",
+    "units": 3,
+    "progress": 0,
+    "materials": []
+  },
+  {
+    "id": "c4",
+    "code": "TPC 101",
+    "title": "Macro Perspective of Tourism and Hospitality",
+    "instructor": "TBA",
+    "schedule": "MW 12:00PM - 1:30PM",
+    "room": "401",
+    "units": 3,
+    "progress": 0,
+    "materials": []
+  },
+  {
+    "id": "c5",
+    "code": "GE 102",
+    "title": "Understanding the Self",
+    "instructor": "TBA",
+    "schedule": "MW 1:30PM - 3:00PM",
+    "room": "401",
+    "units": 3,
+    "progress": 0,
+    "materials": []
+  },
+  {
+    "id": "c6",
+    "code": "NSTP 1",
+    "title": "National Service Training Program 1",
+    "instructor": "TBA",
+    "schedule": "Th 12:00PM - 3:00PM",
+    "room": "Mezz 101",
+    "units": 3,
+    "progress": 0,
+    "materials": []
+  },
+  {
+    "id": "c7",
+    "code": "PE 1",
+    "title": "P.E./PATHFIT 1: Movement Competency Training",
+    "instructor": "TBA",
+    "schedule": "Th 3:00PM - 5:00PM",
+    "room": "Mezz 101",
+    "units": 2,
+    "progress": 0,
+    "materials": []
+  },
+  {
+    "id": "c8",
+    "code": "AUTH 1",
+    "title": "Authenics 1",
+    "instructor": "TBA",
+    "schedule": "Th 5:00PM - 6:00PM",
+    "room": "Mezz 101",
+    "units": 1,
+    "progress": 0,
+    "materials": []
+  }
+]
